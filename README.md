@@ -81,13 +81,3 @@ The following exercises **require research**, the concepts needed to complete th
 Follow these steps for completing your project.
 
 - [ ] Submit a pull request to merge `<firstName-lastName>` Branch into master (student's Repo). **Please don't merge your own pull request**
-
-SELECT _ FROM customers where PostalCode= '1010';
-Select phone from suppliers where SupplierID= '11';
-SELECT _ FROM orders ORDER BY OrderDate DESC limit 10;
-SELECT \* FROM Customers WHERE City='Madrid' OR City='London' OR Country='Brazil';
-INSERT INTO Customers ('CustomerName', 'ContactName', 'Address', 'City', 'PostalCode', 'Country')
-Values('The Shire', 'Bilbo Baggins', '1 Hobbit-Hole', 'Bag End', '111', 'Middle Earth');
-Update Customers
-Set PostalCode = '11122'
-Where CustomerID = 92
