@@ -12,7 +12,7 @@ const Accounts = {
         return db('accounts').where({id: id}).first()
     },
 
-    addAccount(account) {
+    create(account) {
         return db('accounts').insert(account)
     },
 
@@ -53,7 +53,7 @@ router.get('/:id', (req, res)=> {
 
 
 router.post("/", (req, res) => {
-    Accounts.addAccount(req.body)
+    Accounts.create(req.body)
     .then(([id]) => {
         return Accounts.getById(id).first()
     })
